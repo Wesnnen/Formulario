@@ -26,7 +26,7 @@ fetch("https://api.sheetmonkey.io/form/ezST96QMk1vwuWeaESVF2E", {
     body: JSON.stringify({
         nome , email, cim, numeroLJ, cep, rua, numero, estado, cidade, bairro, complemento, telefone
             })
-})
+}).then(()=> removeloading());
 
 
 }
