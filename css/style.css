@@ -13,6 +13,33 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-   
+    width: auto;  
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.btn,.btn-primary {
+    display: flex;
+    width: 100px;
+    height: 40px;
+}
+
+.loading{
+    width: 20px;
+    height: 10px;
+    animation: spin  1s infinite linear;
+}
+
+@keyframes spin {
+
+    form{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
 }

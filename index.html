@@ -12,26 +12,32 @@
    <br> 
 <div class="card">
       <form name="01" class="row g-3" >
-        <h1>Formulário para teste </h1>
-        <div class="col-md-6">
+        <div class="center">
+        <h1>Formulário com consumo de API's </h1>
+        </div>
+        <div class="col-md-12">
           <label for="nome" class="form-label">Nome</label>
           <input type="text" class="form-control" id="nome" name="nome">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <label for="email" class="form-label">E-mail</label>
           <input type="email" class="form-control" id="email" name="email">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="number" class="form-control" id="telefone" name="telefone">
+        </div>
+        <div class="col-6">
             <label for="cim" class="form-label">Cim</label>
             <input type="number" class="form-control" id="cim" name="cim">
           </div>
-          <div class="col-5">
-            <label for="numero" class="form-label">Numero da Loja</label>
+          <div class="col-6">
+            <label for="numero" class="form-label">Número da Loja</label>
             <input type="number" class="form-control" id="numero_da_loja" name="numero_da_loja">
           </div>
           <p style="margin-bottom: -19px;"><b>Endereço residencial</b></p>
     <form class="row g-3" method="get" action=".">
-        <div class="col-7">
+        <div class="col-md-3">
           <label for="cep" class="form-label">Cep</label>
           <input type="number" class="form-control" id="cep" name="cep" value="" size="10" maxlength="9"
           onblur="pesquisacep(this.value);">
@@ -44,26 +50,37 @@
           <label for="numero" class="form-label">Número</label>
           <input type="text" class="form-control" id="numero" name="numero">
         </div>
-        <div class="col-md-4">
-          <label for="estado" class="form-label">Estado</label>
+        <div class="col-5">
+          <label for="complemento" class="form-label">complemento</label>
+          <input type="text" class="form-control" id="complemento" name="complemento">
+        </div>
+        <div class="col-2">
+          <label for="estado" class="form-label">UF</label>
           <input type="text" class="form-control" id="estado" name="estado">
         </div>
-        <div class="col-md-4">
+        <div class="col-5">
             <label for="cidade" class="form-label">Cidade</label>
             <input type="text" class="form-control" id="cidade" name="cidade">
          
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="bairro" class="form-label">Bairro</label>
           <input type="text" class="form-control" id="bairro" name="bairro">
         </div>
         
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="center">
+          <button type="submit" class="btn btn-primary"><img src="./img/loading.png" ></button>
         </div>   
     </form>
     </form>
 </div> 
+<footer>
+  <br>
+  <P>O formulário foi aprimorado para oferecer uma experiência mais eficiente e interativa aos usuários. Para isso, foi integrado duas APIs poderosas: o <b>ViaCEP</b>, que preenche automaticamente os campos de endereço ao inserir o CEP, e o <b>SheetMonkey</b>, que envia os dados para o Google Drive, garantindo o armazenamento seguro das informações coletadas. Além disso, implementamos validações em JavaScript para assegurar a precisão dos dados inseridos e animações em CSS para tornar o processo de preenchimento mais agradável e fluído. Com essas melhorias, buscamos oferecer ao usuários uma experiência mais intuitiva e simplificada.
+  <BR></BR>
+  <a href="https://docs.google.com/spreadsheets/d/18u4DAZ2QCzM_OratLb_f9RSflNfKljhTNv70baDwoYA/edit?usp=drive_link"> Clique aqui para ver a tabela salva no Google driver</a>
+</P>
+</footer>
 <br><br>     
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
