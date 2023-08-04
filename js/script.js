@@ -15,6 +15,8 @@ const handleSubmit = (event) => {
     const complemento = document.querySelector('input[ name = "complemento"]').value;
     const cidade = document.querySelector('input[ name = "cidade"]').value;
     const bairro = document.querySelector('input[ name = "bairro"]').value;
+    const autorizo = document.querySelector('input[ name = "flexRadioDefault"]:checked').value;
+
 
 fetch("https://api.sheetmonkey.io/form/ezST96QMk1vwuWeaESVF2E", {
 
@@ -24,7 +26,7 @@ fetch("https://api.sheetmonkey.io/form/ezST96QMk1vwuWeaESVF2E", {
         'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-        nome , email, cim, numeroLJ, cep, rua, numero, estado, cidade, bairro, complemento, telefone
+        nome , email, cim, numeroLJ, cep, rua, numero, estado, cidade, bairro, complemento, telefone, autorizo
             })
 }).then(()=> removeloading());
 

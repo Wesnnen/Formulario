@@ -33,6 +33,14 @@ body{
     animation: spin  1s infinite linear;
 }
 
+.form-check{ 
+    margin-left: 10px;
+}
+
+.texto{
+    margin-bottom: -10px;
+}
+
 @keyframes spin {
 
     form{

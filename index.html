@@ -29,11 +29,11 @@
         </div>
         <div class="col-6">
             <label for="cim" class="form-label">Cim</label>
-            <input type="number" class="form-control" id="cim" name="cim">
+            <input type="number" class="form-control" id="cim" name="cim" onKeyPress="if(this.value.length==6) return false;">
           </div>
           <div class="col-6">
             <label for="numero" class="form-label">Número da Loja</label>
-            <input type="number" class="form-control" id="numero_da_loja" name="numero_da_loja">
+            <input type="number" class="form-control" id="numero_da_loja" name="numero_da_loja" onKeyPress="if(this.value.length==4) return false;">
           </div>
           <p style="margin-bottom: -19px;"><b>Endereço residencial</b></p>
     <form class="row g-3" method="get" action=".">
@@ -63,15 +63,30 @@
             <input type="text" class="form-control" id="cidade" name="cidade">
          
         </div>
+        
         <div class="col-md-6">
           <label for="bairro" class="form-label">Bairro</label>
           <input type="text" class="form-control" id="bairro" name="bairro">
         </div>
-        
+        <P class="texto"><b>*Autorizo o ***** a usar meus dados para atualização do cadastro e ingresso no grupo de WhatsApp.</b></P>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="SIM" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              SIM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="NÂO" id="flexRadioDefault2" >
+            <label class="form-check-label" for="flexRadioDefault2">
+              NÂO
+            </label>
+          </div>
         <div class="center">
           <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>   
+        </div> 
+          
     </form>
+    
     </form>
 </div> 
 <footer>
